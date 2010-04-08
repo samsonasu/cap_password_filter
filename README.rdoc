@@ -15,8 +15,13 @@ Just install it and then add
 
 to your deploy.rb
 
-That's it.  This only filters those http auth password, but if you notice any other kinds that should be filtered too, let me know or write a patch.  
+That's it.  This gem isn't that important though, and I'm not sure it's worth introducing a dependency on this gem into your deploy script, so I usually do something like this instead, just to be nice:
 
+  begin
+    require 'cap_password_filter'
+  rescue LoadError
+    puts "** You should run gem install cap_password_filter if having your password logged to the console bothers you.\n\n"
+  end
 
 == CHANGES
 
