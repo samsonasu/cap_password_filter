@@ -20,6 +20,11 @@ That's it.  This only filters those http auth password, but if you notice any ot
 
 == CHANGES
 
+
+v1.0.2 
+
+ - added rdoc instead of plain text readme
+
 == AUTHOR
 
 Brian Samson (http://briansamson.com)
